@@ -71,7 +71,7 @@ nav {
     grid-template-columns: repeat(4,1fr);
 }
 
-nav ~ img {
+nav img {
     display:none;
 }
 
@@ -100,7 +100,7 @@ a[href="logo"] {
     background-color: #EB5428;
 }
 
-a[href="/profile"] {
+.profile {
     color: #000000;
     gap: 5px;
     order: 3;
@@ -115,7 +115,7 @@ a[href="/profile"] {
     flex-direction: column;
 }
 
-a[href="/profile"] span {
+.profile span {
     top: -6px;
     position: relative;
     font-size: 16px;
@@ -379,7 +379,7 @@ small {
         order: 1;
     }
 
-    a[href="/profile"] {
+    .profile {
         width: fit-content;
         margin-left: auto;
     }
@@ -499,7 +499,7 @@ small {
         padding: 25px;
     }
 
-    a[href="/profile"] {
+    .profile {
         grid-column: 6/7;
         order: 3;
     }
