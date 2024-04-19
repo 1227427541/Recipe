@@ -255,6 +255,8 @@ menu a {
     align-items: center;
     gap: 10px;
     display: flex;
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
 
 .ingredients li {
@@ -417,6 +419,8 @@ small {
 
     .detail {
         text-align: center;
+        margin-top: 5px;
+        margin-bottom: 10px;
     }
 
     .detail dl {
@@ -533,6 +537,8 @@ small {
         grid-template-columns: repeat(5, 1fr);
         color: #7ABFBF;
         background-color: #0D0D0D;
+        margin-top: 5px;
+        margin-bottom: 10px;
     }
 
     .detail dl {
