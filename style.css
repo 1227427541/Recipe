@@ -71,6 +71,10 @@ nav {
     grid-template-columns: repeat(4,1fr);
 }
 
+nav ~ img {
+    display:none;
+}
+
 header {
     padding: 175px 0 0 0;
     background-color: #F2F2F2;
