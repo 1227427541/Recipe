@@ -91,7 +91,7 @@ nav label {
     text-align: center;
 }
 
-a[href="logo"] {
+.logo {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -374,7 +374,7 @@ small {
         display: none;
     }
 
-    a[href="logo"] {
+    .logo {
         width: fit-content;
         grid-column: 1/2;
         order: 1;
@@ -497,7 +497,7 @@ small {
         text-align: center;
     }
 
-    a[href="logo"]{
+    .logo {
         padding: 25px;
     }
 
