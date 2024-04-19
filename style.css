@@ -1,27 +1,16 @@
-:root {
-    --primary: #7ABFBF;
-    --primary-light: rgba(122,191,191,0.5);
-    --background: #0D0D0D;
-    --foreground: #F2F2F2;
-    --secondary-color: #EB5428;
-}
-
-* {
+body {
+    margin: 0 auto;
+    width: 414px;
+    background-color: rgba(122,191,191,0.5);
+    overflow-x: hidden;
+    position: relative;
     font-family: 'Bebas Neue', sans-serif;
     font-weight: 400;
     box-sizing: border-box;
 }
 
-body {
-    margin: 0 auto;
-    width: 414px;
-    background-color: var(--primary-light);
-    overflow-x: hidden;
-    position: relative;
-}
-
 main {
-    background-color: var(--foreground);
+    background-color: #F2F2F2;
     padding: 20px 0;
 }
 
@@ -84,7 +73,7 @@ nav {
 
 header {
     padding: 175px 0 0 0;
-    background-color: var(--foreground);
+    background-color: #F2F2F2;
 }
 
 header p:last-of-type {
@@ -104,7 +93,7 @@ a[href="logo"] {
     align-items: center;
     order: 2;
     grid-column: 2/4;
-    background-color: var(--secondary-color);
+    background-color: #EB5428;
 }
 
 a[href="/profile"] {
@@ -221,7 +210,7 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
 
 form {
     width: 325px;
-    border: 1px solid var(--secondary-color);
+    border: 1px solid #EB5428;
     display: flex;
 }
 
@@ -230,7 +219,7 @@ form input {
 }
 
 form button {
-    background-color: var(--secondary-color);
+    background-color: #EB5428;
     cursor: pointer;
     border: none;
 }
@@ -241,7 +230,7 @@ form button {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding: 0 10px;
-    color: var(--secondary-color);
+    color: #EB5428;
 }
 
 menu a {
@@ -287,7 +276,7 @@ menu a {
 }
 
 .side-dishes {
-    background-color: var(--primary);
+    background-color: #7ABFBF;
     padding: 0.5em;
 }
 
@@ -324,13 +313,13 @@ menu a {
 }
 
 a {
-    color: var(--secondary-color);
+    color: #EB5428;
     text-decoration: none;
 }
 
 a:hover, a:visited {
     text-decoration: underline;
-    color: var(--secondary-color);
+    color: #EB5428;
 }
 
 footer {
@@ -522,7 +511,7 @@ small {
     .hud menu {
         position: relative;
         gap: 30px;
-        border: 1px solid var(--secondary-color);
+        border: 1px solid #EB5428;
         display: flex;
         flex-direction: column;
     }
@@ -542,8 +531,8 @@ small {
     .detail {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
-        color: var(--primary);
-        background-color: var(--background);
+        color: #7ABFBF;
+        background-color: #0D0D0D;
     }
 
     .detail dl {
