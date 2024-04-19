@@ -1,0 +1,600 @@
+:root {
+    --primary: #7ABFBF;
+    --primary-light: rgba(122,191,191,0.5);
+    --background: #0D0D0D;
+    --foreground: #F2F2F2;
+    --secondary-color: #EB5428;
+}
+
+* {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    width: 414px;
+    background-color: var(--primary-light);
+    overflow-x: hidden;
+    position: relative;
+}
+
+main {
+    background-color: var(--foreground);
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 40px;
+}
+
+h2 {
+    margin: 0;
+    text-align: center;
+    font-size: 30px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 25px;
+}
+
+nav a, nav span, menu li, #social li, footer {
+    font-size: 20px;
+}
+
+p, dd, li, nav, input {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+
+dt {
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+figure {
+    margin: 0;
+}
+
+img {
+    height: auto;
+    width: 100%;
+}
+
+dd {
+    margin: 0;
+}
+
+nav {
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    display: grid;
+    position: absolute;
+    background-color: #FFFFFF;
+    filter: drop-shadow(0 0 5px rgba(0,0,0,.5));
+    grid-template-columns: repeat(4,1fr);
+}
+
+header {
+    padding: 175px 0 0 0;
+    background-color: var(--foreground);
+}
+
+header p:last-of-type {
+    margin-bottom: 0;
+}
+
+nav label {
+    padding: 0 20px;
+    margin: auto auto;
+    text-align: center;
+}
+
+a[href="logo"] {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: 2;
+    grid-column: 2/4;
+    background-color: var(--secondary-color);
+}
+
+a[href="/profile"] {
+    color: #000000;
+    gap: 5px;
+    order: 3;
+    text-decoration: none;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    margin: auto 0;
+    justify-content: center;
+    text-align: center;
+    grid-column: 4/5;
+    flex-direction: column;
+}
+
+a[href="/profile"] span {
+    top: -6px;
+    position: relative;
+    font-size: 16px;
+}
+
+dl {
+    margin: 0;
+}
+
+nav ul {
+    margin: 0;   
+    padding: 0 20px;
+    order: 4;
+    overflow: hidden;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    list-style: none;
+    max-height: 0;
+    display: grid;
+    transition: all .2s ease-out;
+    grid-column: 1/5;  
+}
+
+nav li {
+    text-align: center;
+}
+
+label {
+    user-select: none;
+    cursor: pointer;
+    height: fit-content;
+    position: relative;
+    display: inline-block;
+    width: fit-content;
+}
+
+label span {
+    background-color: #ffffff;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background-color .2s ease-out;
+    width: 18px;
+}
+
+label span:before, label span:after {
+    width: 18px;
+    position: relative;
+    height: 2px;
+    display: block;
+    transition: background-color .2s ease-out;
+    background-color: #ffffff;
+}
+
+label span:before {
+    top: 5px;
+}
+
+label span:after {
+    top: -5px;
+}
+
+#menu-button {
+    display: none;
+}
+
+input:checked ~ ul {
+    max-height: 500px;
+    padding: 20px;
+}
+
+input:checked ~ label span {
+    background: transparent;
+}
+
+input:checked ~ label span:before {
+    transform: rotate(-45deg);
+}
+
+input:checked ~ label span:after {
+    transform: rotate(45deg);
+}
+
+input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
+    top: 0;
+}
+
+.search {
+    width: 100%;
+    top: 100px;
+    justify-content: center;
+    position: absolute;
+    align-items: center;
+    display: flex;
+}
+
+form {
+    width: 325px;
+    border: 1px solid var(--secondary-color);
+    display: flex;
+}
+
+form input {
+    width: 100%;
+}
+
+form button {
+    background-color: var(--secondary-color);
+    cursor: pointer;
+    border: none;
+}
+
+.start menu {
+    list-style: none;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 10px;
+    color: var(--secondary-color);
+}
+
+menu a {
+    font-weight: 700;
+    justify-content: center;
+    white-space: nowrap;
+    display: flex;
+    font-size: 0.725em;
+    text-transform: uppercase;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+
+.hud p {
+    padding: 0 10px;
+    line-height: 1.5em;
+}
+
+.detail dl {
+    justify-content: flex-start;
+    padding-left: 10px;
+    align-items: center;
+    gap: 10px;
+    display: flex;
+}
+
+.ingredients li {
+    line-height: 2.5em;
+}
+
+.ingredients ul {
+    padding-inline-start: 30px;
+}
+
+.instuctions ol {
+    padding-inline-start: 30px;
+}
+
+.instuctions li {
+    padding: 10px 0;
+    padding-left: 10px;
+    line-height: 1.75em;
+}
+
+.side-dishes {
+    background-color: var(--primary);
+    padding: 0.5em;
+}
+
+.side-dishes h2 {
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.side-dishes h3 {
+    margin: 0;
+    text-align: left;
+}
+
+.side-dishes p {
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.side-dishes section {
+    justify-content: center;
+    gap: 10px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.side-dishes section:not(:first-of-type) {
+    margin-top: 1.5em;
+}
+
+.side-dishes section div {
+    margin: 0;
+    grid-column: 2/5;
+}
+
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+a:hover, a:visited {
+    text-decoration: underline;
+    color: var(--secondary-color);
+}
+
+footer {
+    background-color: #ffffff;
+}
+
+footer ul {
+    margin: 0;
+    padding: 30px 0 10px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style: none;
+}
+
+footer svg {
+    margin: 0 auto;
+    display: block;
+}
+
+footer li {
+    text-align: center;
+}
+
+
+footer h3, footer h2 {
+    display: none;
+}
+
+footer section:last-of-type {
+    margin: 0 auto;
+    width: 50%;
+}
+
+small {
+    display: block;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    body {
+        width: 768px;
+    }
+
+    nav input, nav label {
+        display: none;
+    }
+
+    a[href="logo"] {
+        width: fit-content;
+        grid-column: 1/2;
+        order: 1;
+    }
+
+    a[href="/profile"] {
+        width: fit-content;
+        margin-left: auto;
+    }
+
+    nav ul {
+        margin: 10px 0;
+        max-height: fit-content;
+        gap: 20px;
+        grid-template-columns: repeat(7,1fr);
+    }
+
+    nav img {
+        width: 50px;
+        height: 50px;
+    }
+
+    header h1 {
+        margin-left: 20px;
+        text-align: left;
+    }
+
+    .search {
+        width: fit-content;
+        z-index: 1;
+        top: 5px;
+        right: 100px;
+    }
+
+    .hud {
+        position: relative;
+    }
+
+    .start menu {
+        width: 100%;
+        padding: 10px 0;
+        margin: 0;
+        top: 0;
+        position: absolute;
+        background-color: rgba(255,255,255, .75);
+    }
+
+    .detail {
+        text-align: center;
+    }
+
+    .detail dl {
+        justify-content: center;
+    }
+
+    .instuctions {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+
+    .ingredients li {
+        line-height: 1.75em;
+        padding: 0px 0;
+    }
+
+    .directions {
+        grid-column: 2/5;
+    }
+
+    .side-dishes {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .side-dishes h2 {
+        grid-column: 1/3;
+    }
+
+    .side-dishes section:not(:first-of-type) {
+        margin-top: 0;
+    }
+
+    footer {
+        padding: 20px 0;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    footer section:first-of-type {
+        order: 2;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    body {
+        width: 1200px;
+    }
+
+    main {
+        padding-top: 0;
+    }
+
+    nav {
+        grid-template-columns: repeat(6,1fr);
+    }
+
+    nav ul {
+        width: 100%;
+        gap: 40px;
+        grid-column: 2/6;
+        order: 2;
+    }
+
+    header h1 {
+        text-align: center;
+    }
+
+    a[href="logo"]{
+        padding: 25px;
+    }
+
+    a[href="/profile"] {
+        grid-column: 6/7;
+        order: 3;
+    }
+
+    .search {
+        width: 100%;
+        top: 120px;
+        z-index: 1;
+        left: 0;
+    }
+
+    .hud {
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+    }
+
+    .hud menu {
+        position: relative;
+        gap: 30px;
+        border: 1px solid var(--secondary-color);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hud menu li {
+        height: fit-content;
+    }
+
+    .hud img {
+        grid-column: 2/7;
+    }
+
+    .hud div {
+        grid-column: 7/13;
+    }
+
+    .detail {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        color: var(--primary);
+        background-color: var(--background);
+    }
+
+    .detail dl {
+        display: block;
+    }
+
+    .detail h2 {
+        margin-bottom: 10px;
+        grid-column: 1/6;
+    }
+
+    .detail strong {
+        display: block;
+    }
+
+    .instuctions ol {
+        padding-inline-start: 30px;
+        padding-right: 100px;
+        padding: 0px 0 0px 0px;
+    }
+
+    .ingredients li {
+        line-height: 1.75em;
+        padding: 10px 0px 0px 0px;
+    }
+
+    .directions {
+        grid-column: 2/5;
+    }
+
+    .side-dishes {
+        padding: 10px 50px;
+        grid-template-columns: repeat(4,1fr);
+        gap: 0 50px;
+    }
+
+    .side-dishes h2 {
+        grid-column: 1/5;
+    }
+
+    .side-dishes section img {
+        grid-column: 1/5;
+    }
+
+    .side-dishes section div {
+        grid-column: 1/5;
+    }
+
+    .side-dishes dl {
+        align-items: center;
+        display: flex;
+        gap: 10px;
+    }
+}
