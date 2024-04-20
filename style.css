@@ -42,8 +42,8 @@ p, dd, li, input {
     font-family: 'Montserrat', sans-serif;
 }
 
-nav, menu li {
-    font-size: 16px;
+nav li, menu li {
+    font-size: 20px;
     font-weight: 400;
     font-family: 'Bebas Neue', sans-serif;
 }
