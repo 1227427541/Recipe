@@ -31,18 +31,13 @@ h3 {
     font-size: 25px;
 }
 
-nav a, nav span, menu li, #social li, footer {
-    font-size: 20px;
-}
-
-
 p, dd, li, input, nav {
     font-size: 16px;
     font-weight: 400;
     font-family: 'Montserrat', sans-serif;
 }
 
-nav li, nav a, nav span, nav a li, menu li, footer{
+nav li, nav a, nav span, nav a li, menu li, nav ul, footer{
     font-size: 20px;
     font-weight: 400;
     font-family: 'Bebas Neue', sans-serif;
