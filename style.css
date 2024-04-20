@@ -627,9 +627,14 @@ small {
         overflow: hidden;
     }
     
-    nav, img, menu, .sociallinks, .search {
+    nav, menu, img, .svg, .sociallinks, .search {
         visibility:hidden;
     }
+    
+    .detail {
+        color: black;
+    }
+    
  
 }
 
