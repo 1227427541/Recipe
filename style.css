@@ -67,8 +67,8 @@ nav {
     display: grid;
     position: absolute;
     background-color: #FFFFFF;
-    filter: drop-shadow(0 0 5px rgba(0,0,0,.5));
-    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    grid-template-columns: repeat(6,1fr);
 }
 
 nav img {
