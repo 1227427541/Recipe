@@ -35,16 +35,16 @@ nav a, nav span, menu li, #social li, footer {
     font-size: 20px;
 }
 
-p, dd, li, nav, input {
+menu li, nav, input {
     font-size: 16px;
     font-weight: 400;
     font-family: 'Bebas Neue', sans-serif;
 }
 
-dt {
+dt, dd, li, p {
     font-size: 16px;
     font-weight: 700;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 figure {
