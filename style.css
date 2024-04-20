@@ -72,7 +72,7 @@ nav {
 }
 
 nav img {
-    visibility:hiddien;
+    visibility:hidden;
 }
 
 
@@ -393,7 +393,7 @@ small {
     }
 
     nav img {
-        visibility:visibile;
+        visibility:visible;
         width: 50px;
         height: 50px;
     }
@@ -633,8 +633,7 @@ small {
     
     .detail {
         color: black;
-    }
-    
+    }    
  
 }
 
