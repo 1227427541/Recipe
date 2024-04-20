@@ -6,7 +6,7 @@ body {
 }
 
 nav, menu, img, .svg, .sociallinks, .search {
-    visibility:hidden;
+    display: none;
 }
 
 .detail {

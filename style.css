@@ -35,15 +35,22 @@ nav a, nav span, menu li, #social li, footer {
     font-size: 20px;
 }
 
-menu li, nav, input {
+
+p, dd, li, input {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav, menu li {
     font-size: 16px;
     font-weight: 400;
     font-family: 'Bebas Neue', sans-serif;
 }
 
-dt, dd, li, p {
+dt {
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 700;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -628,7 +635,7 @@ small {
     }
     
     nav, menu, img, .svg, .sociallinks, .search {
-        visibility:hidden;
+        display: none;
     }
     
     .detail {
