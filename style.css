@@ -38,13 +38,13 @@ nav a, nav span, menu li, #social li, footer {
 p, dd, li, nav, input {
     font-size: 16px;
     font-weight: 400;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 dt {
     font-size: 16px;
     font-weight: 700;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 figure {
@@ -628,7 +628,7 @@ small {
     }
     
     nav, img, menu, .sociallinks, .search {
-        display: none;
+        visibility:hidden;
     }
  
 }
