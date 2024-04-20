@@ -1,0 +1,16 @@
+body {
+    margin: 0.5in;
+    font-family: 'Bebas Neue', serif;
+    height: 100%;
+    overflow: hidden;
+}
+
+nav, menu, img, .sociallinks, .search {
+    display: none;
+}
+
+
+
+
+
+

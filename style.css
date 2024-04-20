@@ -72,7 +72,7 @@ nav {
 }
 
 nav img {
-    display: none;
+    visibility:hiddien;
 }
 
 
@@ -393,7 +393,7 @@ small {
     }
 
     nav img {
-        display:block;
+        visibility:visibile;
         width: 50px;
         height: 50px;
     }
@@ -494,7 +494,7 @@ small {
     }
 
     nav img {
-        display:block;
+        visibility: visible;
     }
 
     header h1 {
@@ -506,8 +506,13 @@ small {
     }
 
     #cheesington img {
-        height: 50px;
-        width: 50px;
+        margin-left:10px;
+        width: 25%;
+        margin-right: 0;
+    }
+
+    #cheesington {
+        display: flex;
     }
 
     .logo {
@@ -612,3 +617,19 @@ small {
         gap: 10px;
     }
 }
+
+@media print and (max-height: 11in) {
+
+    body {
+        margin: 0.5in;
+        font-family: 'Bebas Neue', serif;
+        height: 100%;
+        overflow: hidden;
+    }
+    
+    nav, img, menu, .sociallinks, .search {
+        display: none;
+    }
+ 
+}
+

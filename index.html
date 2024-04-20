@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="print.css" media="print">
     <title>Recipes</title>
 </head>
 <body>
@@ -16,7 +17,7 @@
                 <div class="hud">
                     <menu>
                         <li>
-                            <a href="#">
+                            <a href="#save">
                                 Save
                                 <!--save-->
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-download" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#EB5428" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -28,7 +29,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="#share">
                                 Share
                                 <!--share-->
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-share" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#EB5428" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -42,7 +43,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="#print" onclick="window.print()">
                                 Print
                                 <!--print-->
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-printer" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#EB5428" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -54,7 +55,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="#jump">
                                 Jump to Recipe
                                 <!--jump-->
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-symlink" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#EB5428" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -314,7 +315,7 @@
     </div>
     <footer id="social">
         <h2>Connect</h2>
-        <section>
+        <section id="sociallinks">
             <h3>Social Media Links</h3>
             <ul>
                 <li>
