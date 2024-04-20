@@ -5,8 +5,12 @@ body {
     overflow: hidden;
 }
 
-nav, menu, img, .sociallinks, .search {
+nav, menu, img, .svg, .sociallinks, .search {
     visibility:hidden;
+}
+
+.detail {
+    color: black;
 }
 
 
