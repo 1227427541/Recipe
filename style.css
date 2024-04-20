@@ -36,13 +36,13 @@ nav a, nav span, menu li, #social li, footer {
 }
 
 
-p, dd, li, input {
+p, dd, li, input, nav {
     font-size: 16px;
     font-weight: 400;
     font-family: 'Montserrat', sans-serif;
 }
 
-nav li, menu li {
+nav li, nav a, nav span, nav a li, menu li, footer{
     font-size: 20px;
     font-weight: 400;
     font-family: 'Bebas Neue', sans-serif;
