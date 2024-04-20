@@ -501,6 +501,15 @@ small {
         text-align: center;
     }
 
+    footer {
+        height: 50%;
+    }
+
+    #cheesington img {
+        height: 50px;
+        width: 50px;
+    }
+
     .logo {
         padding: 25px;
     }
